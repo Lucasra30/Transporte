@@ -321,3 +321,116 @@ a{ color:inherit; text-decoration:none; }
   }
   .nav.isOpen{ display:flex; }
 }
+
+/* ================= MOBILE FIRST ================= */
+@media (max-width: 600px){
+
+  /* ===== HERO ===== */
+  .hero{
+    padding: 28px 0 20px;
+  }
+
+  .badge{
+    font-size: .85rem;
+    padding: 6px 10px;
+  }
+
+  .hero h1{
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+
+  .hero__desc{
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+
+  .hero__stats{
+    display: none; /* REMOVE excesso visual no mobile */
+  }
+}
+
+@media (max-width: 600px){
+
+  .btn{
+    width: 100%;
+    justify-content: center;
+    font-size: 1.05rem;
+    padding: 16px;
+  }
+
+  .hero__actions{
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 600px){
+
+  .hero__grid{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero__card{
+    order: -1; /* Card da Fiorino sobe */
+  }
+}
+
+
+@media (max-width: 600px){
+
+  .grid3{
+    grid-template-columns: 1fr;
+  }
+
+  .service{
+    padding: 18px;
+  }
+
+  .service h3{
+    font-size: 1.15rem;
+  }
+}
+
+
+@media (max-width: 600px){
+
+  .about p{
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .pillRow{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px){
+
+  input, textarea{
+    font-size: 16px; /* evita zoom automático no iPhone */
+    padding: 14px;
+  }
+
+  label{
+    font-size: .9rem;
+  }
+
+  .form{
+    padding: 14px;
+  }
+}
+
+@media (max-width: 600px){
+
+  .floatZap{
+    right: 14px;
+    bottom: 14px;
+    padding: 16px 18px;
+    font-size: 1rem;
+  }
+}
+
+
