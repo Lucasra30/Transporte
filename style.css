@@ -444,13 +444,14 @@ a{ color:inherit; text-decoration:none; }
 
 .gallery img{
   width: 100%;
-  height: 180px;
+  aspect-ratio: 4 / 3; 
   object-fit: cover;
   border-radius: 14px;
   cursor: pointer;
   transition: .25s ease;
   border: 1px solid var(--border);
 }
+
 
 .gallery img:hover{
   transform: scale(1.03);
@@ -462,6 +463,8 @@ a{ color:inherit; text-decoration:none; }
   .gallery{
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
 
   .gallery img{
     height: 140px;
@@ -493,6 +496,7 @@ a{ color:inherit; text-decoration:none; }
   color: #fff;
   cursor: pointer;
 }
+
 
 
 
