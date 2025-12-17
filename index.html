@@ -184,6 +184,30 @@
       </div>
     </div>
   </section>
+ 
+  <!-- Galeria -->
+<section class="section" id="galeria">
+  <div class="container">
+    <div class="section__head">
+      <h2>Galeria</h2>
+      <p>Alguns registros do trabalho com a Fiorino</p>
+    </div>
+
+    <div class="gallery">
+      <img src="img/fiorino1.jpg" alt="Fiorino - transporte" onclick="openGallery(this)">
+      <img src="img/fiorino2.jpg" alt="Carga na Fiorino" onclick="openGallery(this)">
+      <img src="img/fiorino3.jpg" alt="Entrega realizada" onclick="openGallery(this)">
+      <img src="img/fiorino4.jpg" alt="Transporte urbano" onclick="openGallery(this)">
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeGallery()">
+  <span class="close">&times;</span>
+  <img id="lightboxImg" src="">
+</div>
+
 
   <!-- Área atendida -->
   <section class="section" id="area">
@@ -294,5 +318,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
