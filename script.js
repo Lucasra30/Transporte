@@ -77,3 +77,17 @@ setZapLinks();
 setupMenu();
 setupQuoteForm();
 setYear();
+
+
+function openGallery(img){
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+
+  lightboxImg.src = img.src;
+  lightbox.style.display = "flex";
+}
+
+function closeGallery(){
+  document.getElementById("lightbox").style.display = "none";
+}
+
